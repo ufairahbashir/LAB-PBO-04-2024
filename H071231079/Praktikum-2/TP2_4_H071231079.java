@@ -1,5 +1,3 @@
-package TP2;
-
 class Alamat {
     String jalan, kota;
 
