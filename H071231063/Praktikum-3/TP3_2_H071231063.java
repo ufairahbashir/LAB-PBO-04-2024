@@ -1,11 +1,11 @@
-public class HotWheels {
+public class TP3_2_H071231063 {
     String name;
     double speed, cash;
     int winningAmount;
-    public HotWheels(){
+    public TP3_2_H071231063(){
     }
     // TODO 1: Create a constructor according to your needs in Main.java
-    public HotWheels(String name, double speed, double cash){
+    public TP3_2_H071231063(String name, double speed, double cash){
         this.name=name;
         this.speed=speed;
         this.cash=cash;
@@ -37,7 +37,7 @@ public class HotWheels {
         }
     }
 
-    public void raceTo(HotWheels enemy) {
+    public void raceTo(TP3_2_H071231063 enemy) {
         // TODO 4: Validate if the speed of this car is greater than the enemy's speed
         if (this.getSpeed() > enemy.getSpeed()) {
             // TODO 5: Increase the winning amount
@@ -91,9 +91,9 @@ public class HotWheels {
     }
 
     public static void main(String[] args) {
-        HotWheels mercebesDenz = new HotWheels("Mercebes-Denz", 4, 20000);
+        TP3_2_H071231063 mercebesDenz = new TP3_2_H071231063("Mercebes-Denz", 4, 20000);
 
-        HotWheels ferharri = new HotWheels();
+        TP3_2_H071231063 ferharri = new TP3_2_H071231063();
         ferharri.setName("Ferharri");
         ferharri.setSpeed(4);
         ferharri.setCash(50000);
