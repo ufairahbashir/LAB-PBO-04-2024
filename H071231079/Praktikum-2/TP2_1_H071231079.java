@@ -1,4 +1,3 @@
-package TP2;
 import java.util.Scanner;
 
 class Person {
@@ -36,8 +35,8 @@ public class TP2_1_H071231079 {
         Scanner scan = new Scanner(System.in);
         Person person1 = new Person();
 
-        // person1.setName("Chairil");
-        // person1.setAge(19);
+        // person1.setName("haikal");
+        // person1.setAge(15);
         // person1.setGender(true);
         
         try {
