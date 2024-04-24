@@ -76,10 +76,6 @@ class Smartphone extends Product{
         System.out.println("Screen : " + this.screenSize);
         System.out.println("Storage Capacity : " + this.storageCapacity);
     }
-
-    // double getInfo1(){
-    //     return this.screenSize;
-    // }
 }
 
 class Camera extends Product{
@@ -107,11 +103,6 @@ class Camera extends Product{
         System.out.println("Resolution : " + resolution);
         System.out.println("Lens Type : " + lensType);
     }
-
-    // void info(){
-    //     resolution = (int) Soal02.inputUserAngka("Masukkan resolusi (MP) : ");
-    //     lensType = Soal02.inputUserKosong("Masukkan tipe lensa : ");
-    // }
 }
 
 class Laptop extends Product{
@@ -139,10 +130,6 @@ class Laptop extends Product{
         System.out.println("Processor : " + processorType);
         System.out.println("RAM Size : " + ramSize + "GB");
     }
-
-    // void info(){
-        
-    // }
 }
 
 
@@ -277,31 +264,49 @@ public class Soal02 {
 
     // menu ketiga
     static void beli(){
-        String seriesNumber = inputUserKosong("Masukkan nomor seri produk yang ingin dibeli : ");
-        for (Product i : list){
-            if (i.getSeriesNumber().equals(seriesNumber)) {
-                System.out.printf("%s\n","=".repeat(50));
-                System.out.println("Anda telah membeli produk : ");
-                System.out.println("Brand : " + i.getBrand());
-                System.out.println("Serial Number : " + i.getSeriesNumber());
-                System.out.println("Price : $" + i.getPrice());
-                if (i instanceof Smartphone) {
-                    System.out.println("Screen size : " + i.info1());
-                    System.out.println("Storage Capacity : " + i.info2());
-                }
-                else if (i instanceof Laptop) {
-                    System.out.println("Resolution : " + i.info2());
-                    System.out.println("Lens Type : " + i.info3());
-                }
-                else if (i instanceof Camera) {
-                    System.out.println("Ram size : " + i.info2());
-                    System.out.println("Processor Type : " + i.info3());
-                }
+        outerloop:
+        while (true) {
+            System.out.println("Berikut daftar produk : ");
+            System.out.printf("%s\n","=".repeat(50));
+            int count = 1;
+            for (Product i : list){
+                System.out.println("Produk " + count + " : " + i.getBrand() + " | nomor seri : " + i.getSeriesNumber());
+                count++;
             }
-            else{
-                System.out.println("Produk dengan nomor seri tersebut tidak ditemukan");
+            System.out.printf("%s\n","=".repeat(50));
+            String seriesNumber = inputUserKosong("Masukkan nomor seri produk yang ingin dibeli (ketik 'no' untuk kembali): ").toLowerCase();
+            for (Product i : list){
+                if (i.getSeriesNumber().equals(seriesNumber)) {
+                    System.out.printf("%s\n","=".repeat(50));
+                    System.out.println("Anda telah membeli produk : ");
+                    System.out.println("Brand : " + i.getBrand());
+                    System.out.println("Serial Number : " + i.getSeriesNumber());
+                    System.out.println("Price : $" + i.getPrice());
+                    if (i instanceof Smartphone) {
+                        System.out.println("Screen size : " + i.info1());
+                        System.out.println("Storage Capacity : " + i.info2());
+                    }
+                    else if (i instanceof Laptop) {
+                        System.out.println("Resolution : " + i.info2());
+                        System.out.println("Lens Type : " + i.info3());
+                    }
+                    else if (i instanceof Camera) {
+                        System.out.println("Ram size : " + i.info2());
+                        System.out.println("Processor Type : " + i.info3());
+                    }
+                    break outerloop;
+                }
+                else if (seriesNumber.equals("no")) {
+                    break outerloop;
+                }
+                else{
+                    System.out.println("Produk dengan nomor seri tersebut tidak ditemukan");
+                }
             }
         }
+        
+        
+        
     }
 
     static void Menu(){
