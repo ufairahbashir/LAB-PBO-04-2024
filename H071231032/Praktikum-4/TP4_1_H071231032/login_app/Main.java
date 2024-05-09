@@ -230,7 +230,7 @@ public class Main {
             // Cek apakah nama pengguna hanya mengandung huruf, angka, underscore, dan titik.
             if (Character.isAlphabetic(c[i]) || c[i] == '.' || c[i] == '_' || Character.isDigit(c[i])) continue;
             else {
-                System.out.println("Nama panjang hanya boleh mengandung huruf, angka, underscore, dan titik.\n");
+                System.out.println("Username hanya boleh mengandung huruf, angka, garis bawah, dan titik.\n");
                 return false;
             }
         }
