@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+group 'SnackFacts'
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    mainClass = 'Main.DashboardApp'
+}
+
+javafx {
+    version = '22.0.1'
+    modules = ['javafx.controls']
+}
+
+dependencies {
+    implementation 'org.controlsfx:controlsfx:11.1.2'
+    implementation 'org.xerial:sqlite-jdbc:3.45.3.0'
+}
