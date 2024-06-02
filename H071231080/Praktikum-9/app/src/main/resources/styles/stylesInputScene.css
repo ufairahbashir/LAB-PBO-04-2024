@@ -1,0 +1,35 @@
+#layout-input{
+    -fx-background-color: #FFE4C4;
+}
+
+#text-nama, #text-umur, #text-alamat{
+    -fx-background-color: #ffffff; 
+    -fx-background-radius: 8;
+    -fx-text-fill: #000000; 
+    -fx-font-size: 17px; 
+    -fx-border-radius: 8;
+    -fx-pref-height: 40px;
+    -fx-padding: 0 10px;
+
+}
+
+#save-btn{
+    -fx-font-weight: bold; 
+    -fx-background-color: #ffffff; 
+    -fx-text-fill: rgb(0, 0, 0); 
+    -fx-font-size: 15px;
+    -fx-border-color: #43270F;
+    -fx-pref-height: 40px;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-padding: 0 10px;
+    
+}
+
+#layoutAll{
+    -fx-background-color: #FFE4C4; 
+    -fx-font-family: 'Poppins'; 
+    -fx-font-weight: bold; 
+    -fx-font-size: 17px;
+    
+}

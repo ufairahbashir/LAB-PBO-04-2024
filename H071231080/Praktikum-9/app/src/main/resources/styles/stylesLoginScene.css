@@ -1,0 +1,39 @@
+#layout-login {
+    -fx-background-color: #FFE4C4; 
+    -fx-padding: 20px;
+}
+
+#pass-field, #pass-field-visible, #user-field { /* Gabungkan dengan #user-field */
+    -fx-font-family: 'Poppins'; 
+    -fx-background-radius: 8px;
+    -fx-background-color: rgb(255, 255, 255); 
+    -fx-text-fill: rgb(0, 0, 0); 
+    -fx-font-size: 17px;
+    /* -fx-border-color: #43270F; */
+    -fx-border-radius: 8;
+    -fx-pref-height: 40px;
+    -fx-padding: 0 10px;
+}
+
+#btn-login {
+    -fx-font-weight: bold; 
+    -fx-background-color: #ffffff; 
+    -fx-text-fill: rgb(0, 0, 0); 
+    -fx-font-size: 15px;
+    -fx-border-color: #43270F;
+    -fx-pref-height: 40px;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-padding: 0 10px;
+}
+
+#error-label { /* Perbaikan pada ID ini */
+    -fx-text-fill: red; 
+    -fx-font-weight: bold;
+}
+
+#layoutAll {
+    -fx-background-color: #FFE4C4; 
+    -fx-font-weight: bold; 
+    -fx-font-size: 17px;
+}
