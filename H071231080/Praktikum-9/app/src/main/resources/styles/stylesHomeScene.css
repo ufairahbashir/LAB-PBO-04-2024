@@ -1,0 +1,40 @@
+#layout-home{
+    background-color: #FFE4C4;
+    -fx-background-color: #FFE4C4; 
+    padding: 20px;
+    -fx-padding: 20px;
+}
+
+#input-btn{
+    font-weight: bold;
+    -fx-font-weight: bold; 
+    -fx-background-color: #f5c295; 
+    -fx-text-fill: rgb(0, 0, 0); 
+    -fx-font-size: 15px;
+    -fx-background-radius: 40;
+    -fx-border-color: #5b3617;
+    -fx-border-radius: 40;
+}
+
+#profile-btn{
+    -fx-font-weight: bold; 
+    -fx-background-color: #f5c295; 
+    -fx-text-fill: rgb(0, 0, 0); 
+    -fx-font-size: 17px;
+    -fx-background-radius: 40;
+    -fx-border-color: #5b3617;
+    -fx-border-radius: 40;
+}
+
+#logout-btn{
+    -fx-font-weight: bold; 
+    -fx-background-color: #ffffff; 
+    -fx-text-fill: rgb(0, 0, 0); 
+    -fx-font-size: 15px;
+    -fx-border-color: #43270F;
+    -fx-pref-height: 40px;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-padding: 0 10px;
+}
+
