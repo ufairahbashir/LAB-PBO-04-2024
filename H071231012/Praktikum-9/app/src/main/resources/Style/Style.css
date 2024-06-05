@@ -1,0 +1,85 @@
+.latar{
+    -fx-background-color: #ffffff;
+    -fx-display : flex;
+    -fx-flex-direction : column;
+    -fx-position: absolute;
+}
+
+.judul{
+    -fx-font-family: "Montserrat";
+    -fx-text-fill: rgb(0, 0, 0);
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+}
+
+.button{
+    -fx-font-family: "Montserrat";
+    -fx-text-fill: rgb(255, 255, 255);
+    -fx-font-size: 20px;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 45px;
+    -fx-background-color: #5498FF;
+}
+
+.button:hover{
+    -fx-font-family: "Montserrat";
+    -fx-text-fill: rgb(255, 255, 255);
+    -fx-font-size: 20px;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 45px;
+    -fx-background-color: #4876bb;
+}
+
+.input{
+    -fx-font-family: "Montserrat";
+    -fx-text-fill: rgb(0, 0, 0);
+    -fx-font-size: 20px;
+}
+
+.tabelInput{
+    -fx-pref-width: 350px;
+    -fx-pref-height: 40px;
+    -fx-font-size: 15px; 
+}
+
+.buttonB{
+    -fx-font-family: "Montserrat";
+    -fx-text-fill: #565656;
+    -fx-font-size: 15px;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 20px;
+    -fx-background-color: #ffffff;
+}
+
+.buttonB:hover{
+    -fx-font-family: "Montserrat";
+    -fx-text-fill: #363636;
+    -fx-font-size: 15px;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 20px;
+    -fx-background-color: #ffffff;
+}
+
+.buttonS{
+    -fx-font-family: "Montserrat";
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 20px;
+    -fx-background-color: #5498FF;
+}
+
+.buttonS:hover{
+    -fx-font-family: "Montserrat";
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 20px;
+    -fx-background-color: #4876bb;
+}
+
+.warning{
+    -fx-font-family: "Montserrat";
+    -fx-text-fill: rgb(204, 4, 4);
+    -fx-font-size: 15px;
+}
